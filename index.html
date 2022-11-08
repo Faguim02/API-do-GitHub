@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/github.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta GitHub</title>
+</head>
+<body>
+    <div id="creditos">
+        <label>Criador:</label>
+        <a href="https://github.com/Faguim02" style="display: flex; justify-content: center; margin: 5px;"><img src="./img/github.svg" alt="rede" width="20">Faguim</a>
+    </div>
+    <main>
+        <form id="search">
+            <input type="text" placeholder="Pesquisar perfil do GitHub" id="inputSearch">
+            <button type="button" onclick="search()">
+                <img src="./img/search.svg" alt="search" width="12">
+            </button>
+        </form>
+        <figure id="profile">
+            <img src="./img/user.png" alt="perfil" id="photo">
+            <h1 id="user">@pessoa</h1>
+        </figure>
+        <section id="camp_detais">
+            <div onclick="getFollowers()">
+                <h3 id="followers">0</h3>
+                <p>seguidores</p>
+            </div>
+            <div onclick="getFollowing()">
+                <h3 id="following">0</h3>
+                <p>seguindo</p>
+            </div>
+            <div onclick="getRepositories()">
+                <h3 id="repositories">0</h3>
+                <p>repositórios</p>
+            </div>
+        </section>
+    </main>
+    <section id="conteudo">
+        <h2 id="type_conteudo">detalhes</h2>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
